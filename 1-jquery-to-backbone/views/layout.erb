@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>Image Gallery :: Backbone.js Screencast</title>
+    <script src="/javascript/jquery.min.js" type="text/javascript"></script>
+    <script src="/javascript/jquery.tmpl.js" type="text/javascript"></script>
+    <script src="/javascript/json2.js" type="text/javascript"></script>
+    <script src="/javascript/underscore.js" type="text/javascript"></script>
+    <script src="/javascript/backbone.js" type="text/javascript"></script>
+    <script src="/javascript/imagegallery.js" type="text/javascript"></script>
+
+    <link rel='stylesheet' href='/css/imagegallery.css' type='text/css'>
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <ul id="menu">
+          <li>&nbsp;
+        </ul>
+      </div>
+      <div id="main">
+        <form id="add-image-form">
+          <h1>Add Image</h1>
+          <ul>
+            <li>
+              <label for="image-url">Image Url: </label>
+              <input type="text" id="url" name="url">
+            </li>
+            <li>
+            <label for="preview">Preview: </label>
+            <div id="image-preview">
+              <img id="preview">
+            </div>
+            </li>
+            <li>
+              <label for="name">Image Name: </label>
+              <input type="text" id="name" name="name">
+            </li>
+            <li>
+              <label for="description">Description: </label>
+              <textarea id="description" name="description"></textarea>
+            </li>
+            <li class="save-cancel">
+              <a href="/" id="cancel">cancel</a>
+              <input type="submit" id="save" name="Save" value="Save">
+            </li>
+          </ul>
+        </form>
+      </div>
+      <div id="sidebar">
+        <div id="image-list">
+        </div>
+      </div>
+      <div id="footer">Copyright ©2011 <a href="http://www.pragprog.om">The Pragmatic Programmers</a>.</div>
+    </div>
+  </body>
+</html>

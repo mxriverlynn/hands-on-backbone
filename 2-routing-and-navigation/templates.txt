@@ -1,0 +1,39 @@
+
+    <script type="text/x-jquery-tmpl" id="image-preview-template">
+      <li>
+        <a href="#">
+          <img src="${url}" width="150" height="100" alt="${description}">
+          <span class="image-label">${name}</span>
+        </a>
+    </script>
+
+    <script type="text/x-jquery-tmpl" id="add-image-template">
+      <h1>Add Image</h1>
+      <ul>
+        <li>
+          <label for="image-url">Image Url: </label>
+          <input type="text" id="url" name="url">
+        </li>
+        <li>
+        <label for="preview">Preview: </label>
+        <div id="image-preview">
+          <img id="preview">
+        </div>
+        </li>
+        <li>
+          <label for="name">Image Name: </label>
+          <input type="text" id="name" name="name">
+        </li>
+        <li>
+          <label for="description">Description: </label>
+          <textarea id="description" name="description"></textarea>
+        </li>
+        <li class="save-cancel">
+          <a href="/" id="cancel">cancel</a>
+          <input type="submit" id="save" name="Save" value="Save">
+        </li>
+      </ul>
+    </script>
+
+    <script language="javascript">
+    </script>

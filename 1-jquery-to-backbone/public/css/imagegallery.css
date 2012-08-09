@@ -1,0 +1,314 @@
+body{
+  background-color: #eee;
+}
+
+a{
+  color: #00007f;
+}
+
+#container{
+  display: block;
+  width: 725px;
+  height: 300px;
+  margin: 0px auto;
+}
+
+#main {
+  float: left;
+  width: 495px;
+  height: 450px;
+  background-color: #ddd;
+  margin: 0px;
+  padding: 0px 10px 0px 10px;
+  overflow: scroll;
+}
+
+#header {
+  background-color: #555;
+}
+
+#header a {
+  color: #ffffff;
+}
+
+#header ul {
+  list-style: none;
+  margin: 0px;
+  padding: 5px;
+}
+
+#header ul li {
+  display: inline;
+  margin: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: bold;
+}
+
+#sidebar{
+  float: right;
+  width: 190px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #ccc;
+}
+
+#image-list{
+  display: block;
+  width: 200px;
+  height: 300px;
+  height: 450px;
+  overflow: scroll;
+}
+
+#image-list ul{
+  list-style: none;
+  padding: 0px;
+  width: 170px;
+  font-size: 9pt;
+  text-align: center;
+}
+
+#image-list ul li{
+  padding-bottom: 10px
+}
+
+#image-list img {
+  border: 0px;
+  padding: 5px;
+}
+
+#image-list img.selected {
+  border: 5px solid #fff;
+  padding: 0px;
+}
+
+#image-list .image-label{
+  display: block;
+}
+
+#add-image-form img{
+  width: 300px;
+  height: 200px;
+  padding: 0px;
+}
+
+#add-image-form input{
+  width: 300px;
+}
+
+#add-image-form textarea{
+  width: 300px;
+  height: 65px;
+}
+
+#footer{
+  clear: both;
+  padding: 2px;
+  font-size: 8pt;
+  text-align: right;
+  color: #fff;
+  background-color: #555;
+}
+
+#footer a {
+  color: #fff;
+}
+
+.image-not-found h2 {
+  width: 400px;
+  margin: 25px auto;
+  padding: 25px;
+  background-color: #fee;
+  color: #a00;
+  border: 2px solid #a00;
+  text-align: center;
+}
+
+#add-image-form #image-preview {
+  display: block;
+  float: right
+  width: 300px;
+  height: 200px;
+  background-image: url('/images/Select%20Image.png');
+  background-repeat: no-repeat;
+  background-position: 100px 0px;
+}
+
+#add-image-form #image-preview img {
+  padding: 0px;
+  margin: 0px;
+}
+
+#add-image-form #preview {
+  padding-left: 3px;
+}
+
+#add-image-form ul {
+  list-style: none;
+}
+
+#add-image-form ul li {
+  width: 450px;
+  padding: 2px 0px;
+  clear: both;
+}
+
+#add-image-form ul li label {
+  display: block;
+  width: 100px;
+  float: left;
+}
+
+#add-image-form .save-cancel {
+  text-align: right;
+}
+
+#add-image-form .save-cancel #save {
+  width: 50px;
+  margin-right: 50px;
+}
+
+.image-view {
+  width: 450px;
+  height: 415px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.image-view .image-title{
+  display: block;
+  clear: both;
+  background-color: #ff0faf;
+}
+
+.image-view a {
+  text-decoration: none;
+  color: #000;
+}
+
+.image-view .nav-next, .image-view .nav-previous {
+  margin-top: 60px;
+  font-size: 48pt;
+  font-weight: bold;
+}
+
+.image-view .nav-next {
+  float: left;
+}
+
+.image-view .nav-previous {
+  float: right;
+}
+
+.image-view h2 {
+  padding: 10px 0px 15px 0px;
+  margin: 0px;
+  font-variant: small-caps;
+}
+
+.image-view .image-footer {
+  padding: 10px 0px 10px 0px;
+  clear: both;
+}
+
+.image-view .image-footer a{
+  color: #00007f;
+}
+
+.image-view .image-footer .description {
+  width: 225px;
+  float: left;
+  margin-left: 75px;
+}
+
+.image-view .image-footer .edit{
+  float: right;
+  width: 75px;
+  margin-right: 75px;
+  background-color: #bfbfbf;
+}
+
+#image-url label{
+  margin-bottom: 5px;
+  float: left;
+}
+
+#image-url input{
+  width: 225px;
+  float: left;
+  margin-top: -2px;
+}
+
+#delete-image {
+  width: 65px;
+  float: right;
+  margin-right: 50px;
+  text-align: center;
+  background-color: #bfbfbf;
+}
+
+#delete-image a {
+  width: 50px;
+}
+
+#comments {
+  width: 400px;
+  margin: 0px auto;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  border: 0px;
+  border-top: 1px solid #777;
+}
+
+#comments legend {
+  text-align: left;
+  padding: 5px;
+}
+
+#comments ul {
+  width: 400px;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+#comments ul li {
+  width: 400px;
+  clear: both;
+}
+
+#comments #save-cancel button{
+  float: right;
+  margin-right: 10px;
+}
+
+#comments #save-cancel a{
+  float: right;
+  margin-right: 10px;
+  text-decoration: underline;
+}
+
+#comments textarea {
+  width: 380px;
+  margin-right: 10px;
+  height: 20px;
+  float: right;
+}
+
+#comment-list {
+  text-align: left;
+  width: 400px;
+}
+
+#comment-list li {
+  padding-top: 20px;
+  margin-left: 10px;
+  clear: both;
+}
+
+#comment-list li img {
+  float: left;
+  padding-right: 5px;
+}
+
