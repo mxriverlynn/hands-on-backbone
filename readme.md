@@ -91,10 +91,10 @@ handled.
 
 ## License And Copyright
 
-This is the code, assets, and other raw material and finished 
-application, developed for the Pragmatic Programmer's 
-"Hands-on Backbone.js" screencast. All material contained 
-within is subject to license agreements, copyrights, and other 
-terms as stated.
+Copyrights apply to this source code. You may use the source 
+code in your own projects, however the source code may not be 
+used to create training material, courses, books, articles, and 
+the like. We make no guarantees that this source code is fit for 
+any purpose.
 
 Copyright &copy;2012 The Pragmatic Programmers, LLC. All Rights Reserved.
