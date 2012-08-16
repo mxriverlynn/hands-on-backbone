@@ -1,7 +1,7 @@
 source :rubygems
 
 gem 'sinatra'
-gem 'sinatra-content-for'
+gem 'sinatra-contrib'
 gem 'json'
 
 group :development do
