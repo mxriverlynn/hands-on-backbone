@@ -1,0 +1,102 @@
+doctype 5
+html
+  head
+    title Image Gallery :: Backbone.js Screencast
+
+    link(rel='stylesheet', href='/css/imagegallery.css', type='text/css')
+
+    script(src='/javascript/json2.js')
+    script(src='/javascript/jquery.min.js')
+    script(src='/javascript/underscore.js')
+    script(src='/javascript/backbone.js')
+    script(src='/javascript/backbone.marionette.js')
+    script(src='/javascript/backbone.memento.js')
+    script(src='/javascript/imagegallery.js')
+
+    script#image-preview-template(type='text/html')
+      li
+        a(href='#')
+          img(src!='<%= url %>', width='150', height='100', alt!='<%= description %>')
+          span.image-label <%= name %>
+
+    script#image-view-template(type='text/html')
+      h2 <%= name %>
+        .nav-next
+          a(href='#')
+        .nav-previous
+          a(href='#')
+        img(src!='<%= url %>', width='300', height='200', alt!='<%= description %>')
+        .image-footer
+          .description <%= description %>
+          .edit
+            a(href!='#images/<%= id %>/edit') Edit
+
+    script#edit-image-template(type='text/html')
+      h1 Edit Image <%= id %>
+      ul
+        li
+          label(for!='image-url') Image Url: 
+          input#url(type='text', name='url', value!='<%= url %>')
+        li
+          label(for='preview') Preview: 
+          #image-preview
+            img#preview(src!='<%= url %>')
+        li
+          label(for='name') Image Name: 
+          input#name(type='text', name='name', value!='<%= name %>')
+        li
+          label(for='description') Description: 
+          textarea#description(name='description') <%= description %>
+        li.save-cancel
+          #delete-image
+            a#delete(href='#') delete
+          a#cancel(href!='#images/<%= id %>') cancel
+          input#save(type='submit', name='Save', value='Save')
+
+    script#add-image-template(type='text/html')
+      h1 Add Image
+      ul
+        li
+          label(for='image-url') Image Url: 
+          input#url(type='text', name='url')
+        li
+          label(for='preview') Preview: 
+          #image-preview
+            img#preview
+        li
+          label(for='name') Image Name: 
+          input#name(type='text', name='name')
+        li
+          label(for='description') Description: 
+          textarea#description(name='description')
+        li.save-cancel
+          a#cancel(href='/') cancel
+          input#save(type='submit', name='Save', value='Save')
+
+    script#error-view-template(type='text/html')
+      h1 Error
+        p
+          | <%= message %>
+
+    script
+      var imageData = !{JSON.stringify(images)};
+      $(function(){
+        ImageGallery.start({
+          imageData: imageData
+        });
+      });
+
+  body
+    #container
+      #header
+        ul#menu
+          li
+            a(href='#images/new') Add Image
+      #main
+        block content
+      #sidebar
+        #image-list
+      #footer
+        | Copyright ©2011 
+        a(href='http://www.pragprog.om') The Pragmatic Programmers
+        | .
