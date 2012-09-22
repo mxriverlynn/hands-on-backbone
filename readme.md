@@ -9,10 +9,16 @@ The series is available for purchase at:
 
 ## Running The Sample Code
 
-This sample application is built with Ruby and the Sinatra framework
-as the back-end / web server. Backbone itself does not care
-what the back-end server is built with. I chose Ruby and Sinatra
-because of their simplicity and ubiquity across platforms.
+There are two versions of the sample code. The version that goes with
+the video series is built with Ruby and the Sinatra framework
+as the back-end / web server. The other version, which I've 
+recently updated to the latest library versions, is built with
+NodeJS and ExpressJS.
+
+Backbone itself does not care
+what the back-end server is built with. 
+
+### The Ruby Version
 
 To install and run this code, you need a ruby installation on
 your computer. You can obtain an appropriate version at
@@ -39,6 +45,32 @@ To run the application, open the folder that you wish to
 run from, and run `ruby app.rb` from a command prompt. This
 will start the sinatra web server. Open your browser to 
 http://localhost:4567 and you're ready to go.
+
+### The Node / ExpressJS Version
+
+You'll need to get NodeJS, and NPM on your system: http://nodejs.org and
+http://npmjs.org - most NodeJS installations come with NPM.
+
+Once you have those, run 
+
+```
+npm install
+```
+
+from within the project folder. This
+will install ExpressJS and the other necessary packages.
+
+To run the app, then:
+
+```
+npm start
+```
+
+This will start the local ExpressJS web server on port 3000. Open your
+browser to http://localhost:3000 and you should see the app.
+
+**Note** that the NodeJS version of the code does not yet have all of
+the episode's steps. It currently only has the final, "complete" app.
  
 ## About The Series
 
