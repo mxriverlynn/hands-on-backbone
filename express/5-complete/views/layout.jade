@@ -21,15 +21,15 @@ html
 
     script#image-view-template(type='text/html')
       h2 <%= name %>
-        .nav-next
-          a(href='#')
-        .nav-previous
-          a(href='#')
-        img(src!='<%= url %>', width='300', height='200', alt!='<%= description %>')
-        .image-footer
-          .description <%= description %>
-          .edit
-            a(href!='#images/<%= id %>/edit') Edit
+      .nav-next
+        a(href='#')
+      .nav-previous
+        a(href='#')
+      img(src!='<%= url %>', width='300', height='200', alt!='<%= description %>')
+      .image-footer
+        .description <%= description %>
+        .edit
+          a(href!='#images/<%= id %>/edit') Edit
 
     script#edit-image-template(type='text/html')
       h1 Edit Image <%= id %>
