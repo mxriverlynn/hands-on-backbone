@@ -22,9 +22,9 @@ html
     script#image-view-template(type='text/html')
       h2 <%= name %>
       .nav-next
-        a(href='#')
+        a(href='#') &lt;
       .nav-previous
-        a(href='#')
+        a(href='#') &gt;
       img(src!='<%= url %>', width='300', height='200', alt!='<%= description %>')
       .image-footer
         .description <%= description %>
