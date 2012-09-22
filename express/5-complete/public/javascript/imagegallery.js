@@ -183,7 +183,6 @@ ImageGallery.ImageListView = Backbone.View.extend({
   },
 
   render: function(){
-    console.log(this.collection);
     this.collection.each(this.renderImage);
   }
 });
