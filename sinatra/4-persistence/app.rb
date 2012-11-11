@@ -1,5 +1,4 @@
 require 'sinatra'
-require 'sinatra/content_for'
 require 'erb'
 require 'json'
 require 'sinatra/reloader' if development?
